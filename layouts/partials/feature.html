@@ -13,10 +13,13 @@
             <a href="{{ .Permalink }}" class="featured-post-title">
               {{ .Title }}
             </a>
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div class="elfsight-app-4ade1bb3-94fa-4e6c-ab5a-013221108bdd" dir="ltr"></div>
+
             <ul class="featured-post-meta">
               <li>
                 <i class="fa fa-clock-o"></i>
-                {{ .PublishDate.Format "January 2, 2006" }} - {{ .Params.readTime }} read
+                {{ .Params.persianDate }} - {{ .Params.readTime }} 
               </li>
             </ul>
           </div>
