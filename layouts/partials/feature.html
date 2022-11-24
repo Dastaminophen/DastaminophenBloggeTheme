@@ -6,20 +6,19 @@
       <div class="col-12">
         <article class="featured-post">
           <div class="featured-post-content">
-            <div class="featured-post-author">
-              <img src="{{ $.Site.Params.authorThumb | absURL }}" alt="author" />
-              <p>By <a href={{ "about" | absURL }}>{{ $.Site.Params.author }}</a></p>
-            </div>
             <a href="{{ .Permalink }}" class="featured-post-title">
               {{ .Title }}
             </a>
+            <p>
+              {{ .Description }}
+            </p>
             <script src="https://apps.elfsight.com/p/platform.js" defer></script>
             <div class="elfsight-app-4ade1bb3-94fa-4e6c-ab5a-013221108bdd" dir="ltr"></div>
 
             <ul class="featured-post-meta">
               <li>
-                <i class="fa fa-clock-o"></i>
-                {{ .Params.persianDate }} - {{ .Params.readTime }} 
+                <i></i>
+                {{ .Params.persianDate }}
               </li>
             </ul>
           </div>

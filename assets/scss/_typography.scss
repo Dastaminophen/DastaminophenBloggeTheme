@@ -1,7 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Poppins&display=swap");
+@font-face {
+  font-family: "Shabnam";
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/font/Shabnam.woff2") format("woff2"),
+      url("/font/Shabnam.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Shabnam";
+  font-display: auto;
+  font-style: normal;
+  font-weight: 500;
+  src: url("/font/Shabnam-Medium.woff2") format("woff2"),
+      url("/font/Shabnam-Medium.woff") format("woff");
+}
 
 body {
-  font-family: $secondary-font;
+  font-family: "Shabnam";
   font-size: 14px;
   color: $text-color;
   background: $body-color;
@@ -16,12 +32,12 @@ h4,
 h5,
 h6 {
   color: $text-color-dark;
-  font-family: $primary-font;
+  font-family: "Shabnam";
   font-weight: 700;
   letter-spacing: 0.5px;
 }
 a {
-  font-family: $primary-font;
+  font-family: "Shabnam";
 }
 p {
   font-size: 16px;
