@@ -6,6 +6,9 @@
       <div class="col-12">
         <article class="featured-post">
           <div class="featured-post-content">
+            <p>
+              آخرین اپیزود
+            </p>
             <a href="{{ .Permalink }}" class="featured-post-title">
               {{ .Title }}
             </a>
@@ -14,13 +17,6 @@
             </p>
             <script src="https://apps.elfsight.com/p/platform.js" defer></script>
             <div class="elfsight-app-4ade1bb3-94fa-4e6c-ab5a-013221108bdd" dir="ltr"></div>
-
-            <ul class="featured-post-meta">
-              <li>
-                <i></i>
-                {{ .Params.persianDate }}
-              </li>
-            </ul>
           </div>
           <div class="featured-post-thumb">
             <img src="{{ .Params.thumbnail  | absURL }}" alt="feature-post-thumb" />

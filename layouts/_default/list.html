@@ -6,8 +6,6 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8">
-
-
         {{ $p := where site.RegularPages "Type" "mainpage" }}
         {{ range $p }}
         <article class="blog-post">
@@ -27,7 +25,7 @@
       <div class="col-lg-4">
         <div class="blog-post-widget">
           <div class="latest-widget-title">
-            <h2>از کجا بشنوید</h2>
+            <h2>از کجا بشنویم؟</h2>
           </div>
 
           {{ range .Site.Params.Podcastlinks }}
