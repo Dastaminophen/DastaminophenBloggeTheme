@@ -6,7 +6,10 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8">
-        {{ range $.Paginator.Pages }}
+
+
+        {{ $p := where site.RegularPages "Type" "mainpage" }}
+        {{ range $p }}
         <article class="blog-post">
           <div class="blog-post-thumb">
             <img src="{{ .Params.thumbnail  | absURL }}" alt="blog-thum" />
@@ -19,7 +22,6 @@
           </div>
         </article>
         {{ end }}
-        {{ partial "pagination" .}}
       </div>
 
       <div class="col-lg-4">
