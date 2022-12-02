@@ -15,8 +15,10 @@
             <p>
               {{ .Description }}
             </p>
-            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-            <div class="elfsight-app-4ade1bb3-94fa-4e6c-ab5a-013221108bdd" dir="ltr"></div>
+            <audio controls class="player">
+              <source src="{{ .Params.mediaFiles }}" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
           </div>
           <div class="featured-post-thumb">
             <img src="{{ .Params.thumbnail  | absURL }}" alt="feature-post-thumb" />
