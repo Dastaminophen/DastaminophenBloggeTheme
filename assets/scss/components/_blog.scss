@@ -271,7 +271,7 @@
 
   // start-blog-details
   &-single {
-    padding: 100px 0 50px;
+    padding: 50px 0 50px;
     @include desktop {
       padding-top: 50px;
     }
@@ -399,8 +399,8 @@
         margin-bottom: 20px;
       }
       .title {
-        font-size: 40px;
-        font-weight: 700;
+        font-size: 35px;
+        font-weight: 500;
         color: $text-color-dark;
         text-decoration: none;
         display: block;

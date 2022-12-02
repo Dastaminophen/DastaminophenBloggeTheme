@@ -96,14 +96,14 @@
 
   &-social {
     list-style: none;
-    padding: 0 0 0 60px;
+    padding: 0 60px 0 0;
 
     @include desktop {
       padding: 0;
     }
     li {
       display: inline-block;
-      margin-right: 10px;
+      margin-left: 10px;
       &:last-child {
         margin-right: 0;
       }
