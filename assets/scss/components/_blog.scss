@@ -1,5 +1,5 @@
 .blog {
-  padding: 60px 0 100px;
+  padding: 100px 0 80px;
   @include tablet {
     padding-bottom: 50px;
   }
@@ -162,6 +162,8 @@
     }
     &-widget {
       position: relative;
+      margin-right: 30px;
+      
       .latest-widget-title {
         h2 {
           font-size: 24px;
@@ -436,10 +438,13 @@
         }
       }
       .feature-image {
-        margin: 0 -60px 50px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        display: block;
         @include tablet {
-          margin: 0 0 40px 0;
-          width: 100%;
+          margin-bottom: 40px;
         }
         @include mobile {
           margin-bottom: 30px;

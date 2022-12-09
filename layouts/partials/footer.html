@@ -13,7 +13,7 @@
           <ul>
             <li>
               <a href="https://www.t.me/{{ .Site.Params.telegramUsername }}">
-                <i class="fa fa-facebook"></i>
+                <i class="fa fa-telegram"></i>
               </a>
             </li>
             <li>
@@ -32,9 +32,6 @@
     </div>
   </div>
 </footer>
-
-<!-- Google Map -->
-<script src="https://maps.googleapis.com/maps/api/js?key={{ .Site.Params.googleMapAPI }}&libraries=geometry"></script>
 
 <!-- Vendor JS -->
 {{ $vendor:= resources.Get "js/vendor.js" | minify }}
