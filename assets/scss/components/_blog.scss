@@ -30,6 +30,7 @@
       margin-bottom: 70px;
     }
     &-thumb {
+      flex: 2;
       width: 40%;
       border-radius: 5px;
       overflow: hidden;
@@ -43,9 +44,10 @@
       }
     }
     &-content {
+      flex: 5;
       font-size: 20px;
       width: 55%;
-      margin-right: auto;
+      margin-right: 60px;
       @include mobile {
         width: 100%;
         text-align: center;
@@ -450,6 +452,7 @@
           margin-bottom: 30px;
         }
         img {
+          height: 300px;
           border-radius: 10px;
           box-shadow: 10px 25px 40px 0px rgba(18, 21, 26, 0.07);
           max-width: 100%;
@@ -459,7 +462,7 @@
         max-width: 100%;
       }
       p {
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 500;
       }
       h3 {
