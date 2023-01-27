@@ -11,10 +11,16 @@
           <div class="feature-image">
             <img src="{{ .Params.thumbnail  | absURL }}" alt="banner">
           </div>
-
           {{ end }}
           <div class="single-blog-content">
             {{ .Content }}
+            {{ if eq .Params.type "podcast" }}
+            <p>
+              </br>
+              از طریق لینک زیر چراغ این پادکست رو روشن نگه دارید.</br>
+              <a href="{{ .Site.BaseURL }}/mainpage/donate/">حمایت از ما</a>
+            </p>
+            {{ end }}
             {{ if isset .Params "mediafiles" }}
             <audio controls class="player">
               <source src="{{ .Params.mediaFiles }}" type="audio/mpeg">
